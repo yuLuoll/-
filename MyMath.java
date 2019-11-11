@@ -17,13 +17,13 @@ public class MyMath
 	}
 	public static void printHeader()
 	{
-		System.out.println("³ÌĞòÊä³ö50µÀ100ÒÔÄÚ¼Ó¼õ·¨ËãÊ½µÄÏ°Ìâ");
-		System.out.println("Ã¿´ÎÔËĞĞ³ÌĞò¿ÉµÃµ½Ò»Ì×50µÀÌâµÄÏ°ÌâºÍ´ğ°¸");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½50ï¿½ï¿½100ï¿½ï¿½ï¿½Ú¼Ó¼ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Ï°ï¿½ï¿½");
+		System.out.println("Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ï¿½ÉµÃµï¿½Ò»ï¿½ï¿½50ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ï¿½Í´ï¿½");
 	}
 	public static void getExerises()
-	{//Éú³ÉËãÊ½²¢´¢´æµ½Êı×éÖĞ
+	{//ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½æµ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		short m = 0,n = 0,ov = 0;
-		int i;
+		int i,l;
 		char o = '+';
 		Random random = new Random();
 		for(i = 0;i < 50;)
@@ -31,15 +31,18 @@ public class MyMath
 			ov = (short) random.nextInt(2);
 			m = (short) random.nextInt(101);
 			n = (short) random.nextInt(101);
-			if(m==arr[i]||n==arr2[i])//É¸Ñ¡ÖØ¸´ËãÊ½
-				continue;
-			if(m==arr2[i]||n==arr[i])
-				continue;
+			for(l=0;l<i;l++)
+			{
+				if(m==arr[i]||n==arr2[i])
+					i--;
+				if(m==arr2[i]||n==arr[i])
+					i--;	
+			}
 			if (ov==1)
 			{
 				o = '+';
 				if(m + n <= 100)
-				{//±£Ö¤ËãÊ½½á¹ûĞ¡ÓÚµÈÓÚ100
+				{//ï¿½ï¿½Ö¤ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ğ¡ï¿½Úµï¿½ï¿½ï¿½100
 					arr[i] = m;
 					arr2[i] = n;
 					arr3[i] = ov;
@@ -51,7 +54,7 @@ public class MyMath
 			{
 				o = '-';
 				if(m - n >=0&&n - m>=0)
-				{//±£Ö¤ËãÊ½½á¹û´óÓÚµÈÓÚ0
+				{//ï¿½ï¿½Ö¤ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½0
 					arr[i] = m;
 					arr2[i] = n;
 					arr3[i] = ov;
@@ -64,7 +67,7 @@ public class MyMath
 		
 	}	
 	public static void printExerises()
-	{//Êä³öËãÊ½
+	{//ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
 		int i;
 		
 		for(i = 0;i < 50;i++)
@@ -80,7 +83,7 @@ public class MyMath
 		}
 	}
 	public static void printAnswer()
-	{//Êä³ö´ğ°¸
+	{//ï¿½ï¿½ï¿½ï¿½ï¿½
 		int i;
 		for(i = 0;i < 50;i++)
 		{
