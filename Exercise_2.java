@@ -1,10 +1,11 @@
-package cbsc.cha3;
+package test_2;
+
 import java.util.Random;
 import java.util.ArrayList;
-public class Exercise_3_2_2 extends ArrayList<BinaryOperation_3_2> 
+public class Exercise_2 extends ArrayList<BinaryOperation_2> 
 {
 	private static final long serialVersionUID = 4022510248617156761L;
-	private BinaryOperation_3_2 generateOperation()
+	private BinaryOperation_2 generateOperation()
 	{
 		Random random = new Random();
 		int opValue = random.nextInt(2);
@@ -16,7 +17,7 @@ public class Exercise_3_2_2 extends ArrayList<BinaryOperation_3_2>
 	}
 	public void generateAdditionExercise(int operationCount)
 	{
-		BinaryOperation_3_2 anOperation;
+		BinaryOperation_2 anOperation;
 		while (operationCount > 0 )
 		{
 			do {
@@ -28,7 +29,7 @@ public class Exercise_3_2_2 extends ArrayList<BinaryOperation_3_2>
 	}
 	public void generateBinaryExercise(int operationCount)
 	{
-		BinaryOperation_3_2 anOperation;
+		BinaryOperation_2 anOperation;
 		while (operationCount > 0 )
 		{
 			do{
@@ -40,7 +41,7 @@ public class Exercise_3_2_2 extends ArrayList<BinaryOperation_3_2>
 	}
 	public void generateSubstractExercise(int operationCount)
 	{
-		BinaryOperation_3_2 anOperation;
+		BinaryOperation_2 anOperation;
 		while (operationCount > 0 )
 		{
 			do{
@@ -55,7 +56,7 @@ public class Exercise_3_2_2 extends ArrayList<BinaryOperation_3_2>
 	{
 		int column=1;  
 		int count = 1;
-		for(BinaryOperation_3_2 op: this) 
+		for(BinaryOperation_2 op: this) 
 		{
 			if (column > columns)
 			{

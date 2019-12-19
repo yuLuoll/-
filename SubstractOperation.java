@@ -1,6 +1,6 @@
-package cbsc.cha3;
+package test_2;
 
-public class SubstractOperation extends BinaryOperation_3_2 
+public class SubstractOperation extends BinaryOperation_2 
 {	
 	public SubstractOperation() 
 	{	

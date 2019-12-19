@@ -1,17 +1,17 @@
-package cbsc.cha3;
-// 
-public class AdditionOperation extends BinaryOperation_3_2
-{
+package test_2;
+
+public class AdditionOperation extends BinaryOperation_2 
+{	
 	public AdditionOperation() 
 	{	
 		generateBinaryOperation('+');		
-	}
-	public boolean checkingCalculation(int anInteger)
+	}	
+	boolean checkingCalculation(int anInteger)
 	{
-		return anInteger <= UPPER;
+		return anInteger >= LOWER;
 	}
 	int calculate(int left, int right)
 	{
-		return left+right;
-	}
+		return left-right;
+	}		
 }

@@ -1,10 +1,10 @@
-package cbsc.cha3;
+package test_2;
 
-public class BinaryOperationTester 
+public class BinaryOperayionTest
 {
 	public static void main(String[] args) 
 	{
-		BinaryOperation_3_2 bop;  
+		BinaryOperation_2 bop;   
         for (int i=0; i<10; i++)
         {
         	bop = new AdditionOperation();

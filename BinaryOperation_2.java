@@ -1,6 +1,7 @@
-package cbsc.cha3;
+package test_2;
+
 import java.util.Random;
-public abstract class BinaryOperation_3_2 
+public abstract class BinaryOperation_2 
 {
     static final int UPPER = 100;
 	static final int LOWER = 0;
@@ -30,7 +31,7 @@ public abstract class BinaryOperation_3_2
 	public char getOperator(){return operator;}
 	public int getResult(){return value;}
 
-	public boolean equals (BinaryOperation_3_2 anOperation) 
+	public boolean equals (BinaryOperation_2 anOperation) 
 	{  // ÒªÊ¹ÓÃ getOperator()
 		return 	left_operand == anOperation.getLeftOperand() &
 				right_operand == anOperation.getRightOperand() &
@@ -51,4 +52,3 @@ public abstract class BinaryOperation_3_2
 	
 	
 }
-	
