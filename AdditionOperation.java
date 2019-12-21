@@ -8,10 +8,10 @@ public class AdditionOperation extends BinaryOperation_2
 	}	
 	boolean checkingCalculation(int anInteger)
 	{
-		return anInteger >= LOWER;
+		return anInteger <= UPPER;
 	}
 	int calculate(int left, int right)
 	{
-		return left-right;
+		return left+right;
 	}		
 }
