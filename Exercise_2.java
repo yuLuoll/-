@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.ArrayList;
 public class Exercise_2 extends ArrayList<BinaryOperation_2> 
 {
-	private static final long serialVersionUID = 4022510248617156761L;
+	private static final long serialVersionUID = 3352857962919662476L;
 	private BinaryOperation_2 generateOperation()
 	{
 		Random random = new Random();
